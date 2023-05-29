@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+    let documentTitle = "hari"
+    document.title = documentTitle
+    let short_name = ""
+    let obj = {
+        name:"hari",
+        age:26,
+    }
+    // console.log(obj.age)
+    let fullObj = [
+        {
+            name:'"hari',
+            age:26
+        },
+        {
+            name:"vignesh",
+            age:26
+        },
+        {
+            name:"aranganathan",
+            age:38
+        }
+    ]
+    // console.log(fullObj[1].name)
+    let name = ["hari","haran","R"]
+    function showName(){
+        console.log(name[0])
+    }
+    function showName2(){
+        console.log(name[1])
+    }
+    document.getElementById("clickable").addEventListener("onclick",()=>{
+        showName()
+    })
+  </script>
+
+  <p id="clickable"></p>...After the script.</p>
+
+</body>
+
+</html>
